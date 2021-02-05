@@ -1,0 +1,160 @@
+TEST: default constructor, createGraph, isEmpty, printAllCourses
+
+COURSES:
+CS A100
+CS A140
+CS A150
+CS A170
+CS A200
+CS A216
+CS A220
+CS A250
+CS A265
+CS A272
+
+==================================================
+TEST: emptyGraph
+
+COURSES:
+CS A100
+CS A140
+CS A150
+CS A170
+CS A200
+CS A216
+CS A220
+CS A250
+CS A265
+CS A272
+
+Empty graph...
+
+Graph is empty.
+
+==================================================
+TEST: printPrerequisites
+
+COURSES:
+CS A100
+CS A140
+CS A150
+CS A170
+CS A200
+CS A216
+CS A220
+CS A250
+CS A265
+CS A272
+
+CS A100 - Prerequisites: No prerequisites.
+CS A140 - Prerequisites: 100
+CS A150 - Prerequisites: 140
+CS A170 - Prerequisites: 100
+CS A200 - Prerequisites: 150 265
+CS A216 - Prerequisites: 100
+CS A220 - Prerequisites: 216 250
+CS A250 - Prerequisites: 150
+CS A265 - Prerequisites: No prerequisites.
+CS A272 - Prerequisites: 170
+
+==================================================
+TEST: copy constructor
+
+Graph 1 - COURSES:
+CS A100
+CS A140
+CS A150
+CS A170
+CS A200
+CS A216
+CS A220
+CS A250
+CS A265
+CS A272
+
+Creating new graph using copy constructor...
+Emptying graph 1...
+Check graph 1 (should be empty)...
+Graph 1 - Graph is empty.
+Checking new graph...
+COURSES:
+CS A100
+CS A140
+CS A150
+CS A170
+CS A200
+CS A216
+CS A220
+CS A250
+CS A265
+CS A272
+
+==================================================
+TEST: overloaded assignment operator
+
+Graph 1 - COURSES:
+CS A100
+CS A140
+CS A150
+CS A170
+CS A200
+CS A216
+CS A220
+CS A250
+CS A265
+CS A272
+
+Creating new graph with new set of courses...
+New graph - COURSES:
+CS A300
+CS A301
+
+Copying graph 1 into new graph using overloaded assignment operator...
+
+Emptying graph 1...
+Check graph 1 (should be empty)...
+Graph 1 - COURSES:
+CS A100
+CS A140
+CS A150
+CS A170
+CS A200
+CS A216
+CS A220
+CS A250
+CS A265
+CS A272
+
+Checking new graph...
+COURSES:
+CS A100
+CS A140
+CS A150
+CS A170
+CS A200
+CS A216
+CS A220
+CS A250
+CS A265
+CS A272
+
+==================================================
+TEST: overloaded insertion operator
+
+CS A100: No prerequisites.
+CS A140: CS A100
+CS A150: CS A140
+CS A170: CS A100
+CS A200: CS A150 CS A265
+CS A216: CS A100
+CS A220: CS A216 CS A250
+CS A250: CS A150
+CS A265: No prerequisites.
+CS A272: CS A170
+
+==================================================
+
+
+C:\Users\gerns\Desktop\A200_S21\_Labs\Lab_01_Graphs_Adj_List_prereqs\lab_01_graphs_solution\x64\Debug\Project1.exe (process 3672) exited with code 0.
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .
